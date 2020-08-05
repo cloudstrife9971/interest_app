@@ -1,16 +1,43 @@
 a:link {
   text-decoration: none !important;
 }
-.nav-link {
-  text-transform: capitalize;
+/* ----------------------------Header---------------------- */
+.main-menu {
+  background-color: black;
+
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+}
+
+.main-menu .navbar-brand {
+  color: white;
 }
 .main-menu .navbar {
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
 }
-.main-menu {
-  border-bottom: 1px solid #ebebeb;
+.main-menu .nav-link {
+  text-transform: capitalize;
 }
+.main-menu .navbar-nav .nav-link {
+  color: white !important;
+  font-size: 20px !important;
+}
+.main-menu .navbar-nav .nav-item.active .nav-link {
+  background-color: tomato;
+}
+.main-menu .navbar-nav .nav-link:hover {
+  background-color: rgba(63, 61, 61, 0.747);
+  color: white;
+}
+
+.main-menu .navbar button {
+  border: none;
+}
+.main-menu .navbar button i {
+  color: white;
+}
+
 /* --------------------------Table------------------------ */
 .table-section {
   margin-top: 20px;
@@ -20,6 +47,7 @@ a:link {
 }
 
 .currency-btn {
+    position: relative;
   display: block;
   width: 100%;
   height: 100%;
@@ -28,12 +56,36 @@ a:link {
   padding: 0;
   border: 1px solid darkgray;
 }
+.currency-btn:hover::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+}
+.currency-btn:focus::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+}
+.currency-btn:focus {
+    outline: none;
+    background-color:aliceblue ;
+}
 
 .currency-btn__container {
   width: 100%;
   height: 100%;
   padding: 9px 5px;
-  border-bottom: 4px solid black;
+  /* border-bottom: 4px solid black; */
 }
 .currency-btn__containe:hover {
   box-shadow: ;
@@ -170,7 +222,7 @@ a:link {
 }
 /* --------------------------------news------------------------ */
 .news-section {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 .news__title {
   display: inline;

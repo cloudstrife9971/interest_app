@@ -1,0 +1,14 @@
+@media only screen and (max-width: 	960px) {
+    .main-menu {
+        padding: 5px;
+    }
+    .main-menu .navbar-nav .nav-item.active .nav-link {
+        background-color: black;
+      }
+}
+
+@media only screen and (min-width: 	960px) {
+ .main-menu .nav-item .nav-link {
+    padding: 15px 10px;
+ }
+}
