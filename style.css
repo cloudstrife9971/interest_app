@@ -13,12 +13,11 @@ a:link {
 }
 /* --------------------------Table------------------------ */
 .table-section {
-margin-top: 20px;
+  margin-top: 20px;
 }
 .table-news-container {
   margin-top: 22px;
 }
-
 
 .currency-btn {
   display: block;
@@ -49,14 +48,14 @@ margin-top: 20px;
   font-size: 11px;
 }
 .main-table {
-    padding:21px     10px;
-    /* box-shadow: 0 4px 16px rgba(0,0,0,.08); */
-    margin-top: 23px;
+  padding: 21px 10px;
+  /* box-shadow: 0 4px 16px rgba(0,0,0,.08); */
+  margin-top: 23px;
 }
 .main-table__container {
-    overflow: scroll;
-  
-    height: 500px;
+  overflow: scroll;
+
+  height: 500px;
 }
 .compny {
   text-align: center;
@@ -74,44 +73,43 @@ margin-top: 20px;
   color: black;
 }
 .crncy {
-   
 }
 .crncy_link {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .crncy_link:hover .crncy__name {
-    color: #6673d2; 
+  color: #6673d2;
 }
 .crny__img-container {
-    width: 22px;
+  width: 22px;
 }
 .crncy__img {
-    width: 100%;
+  width: 100%;
 }
 .crncy__name {
-    margin-left: 7px;
-    text-transform: uppercase;
-font-weight: 100;
-color: black;
+  margin-left: 7px;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: black;
 }
 .main-table thead th {
-    position: sticky;
-    top: 0;
-    background-color: white;
-    border-top: none;
-    z-index: 100;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-top: none;
+  z-index: 100;
 }
 .main-table tbody tr th:first-child {
-    position: sticky;
-    left: 0;
-    background-color: white;
+  position: sticky;
+  left: 0;
+  background-color: white;
 }
-.main-table tbody tr:nth-child(odd) th:first-child{
-    background-color: rgba(0,0,0,.05);
+.main-table tbody tr:nth-child(odd) th:first-child {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 .main-table tbody {
-    text-align: center;
+  text-align: center;
 }
 /* --------------------------------Recent-posts-------------------- */
 .posts__title {
@@ -169,4 +167,74 @@ color: black;
 }
 .posts__link:hover .posts__post {
   color: #6673d2;
+}
+/* --------------------------------news------------------------ */
+.news-section {
+    margin-top: 2rem;
+}
+.news__title {
+  display: inline;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+.news__title-line {
+  border-top: 1px solid gray;
+  margin-top: 5px;
+}
+.news__body {
+  margin-top: 28px;
+}
+.article {
+  margin-top: 20px;
+}
+.article__img {
+  overflow: hidden;
+}
+.article__img img {
+  width: 100%;
+  transition: all 0.2s;
+}
+.article:hover .article__img img {
+  transform: scale(1.2);
+}
+.article__body {
+  margin-top: 10px;
+}
+.article__title {
+  margin: 0;
+  padding: 0;
+}
+.article__title a:hover {
+  color: #ef233c;
+}
+.article__title a {
+  display: block;
+  text-decoration: none;
+  color: #07090c;
+  font-weight: 700;
+  font-size: 21.6px;
+}
+.articel__date-msg {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: #ddd;
+}
+.articel__date-msg li:last-child {
+  margin-left: 10px;
+}
+.articel__date-msg li i {
+  margin-right: 5px;
+}
+.article__body p {
+  font-family: "Lato", sans-serif;
+  color: #2c2c2c;
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 9px;
 }
